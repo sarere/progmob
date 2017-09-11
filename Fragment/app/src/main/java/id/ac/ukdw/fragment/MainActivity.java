@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         if(rotation == Surface.ROTATION_90 || rotation == Surface.ROTATION_270){
             setContentView(R.layout.activity_main_landscape);
         } else {
-
+            setContentView(R.layout.fragment_one);
         }
     }
 }
