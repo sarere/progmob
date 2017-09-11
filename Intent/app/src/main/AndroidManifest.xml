@@ -9,6 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
+        <uses-permission android:name="android.permission.INTERNET" />
+        <uses-permission android:name="android.permission.ACCESS_NETWORK.STATE" />
+        <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,6 +25,13 @@
         <activity android:name=".HalamanDuaActivity">
 
         </activity>
+
+        <receiver android:name=".WifiCheckerReciever">
+            <intent-filter>
+                <action android:name="android.net.wifi.WIFI.STATE.CHANGED" />
+                <action android:name="android.net.wifi.WIFI.STATE.CHANGE" />
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>
