@@ -19,8 +19,16 @@
         android:id="@+id/btnPindah"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="147dp"
-        tools:layout_editor_absoluteY="112dp" />
+        android:text="Next Page"
+        tools:layout_editor_absoluteX="142dp"
+        tools:layout_editor_absoluteY="109dp" />
+
+    <Button
+        android:id="@+id/btnNotif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notification"
+        tools:layout_editor_absoluteX="133dp"
+        tools:layout_editor_absoluteY="182dp" />
 
 </android.support.constraint.ConstraintLayout>

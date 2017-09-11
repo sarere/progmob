@@ -1,5 +1,7 @@
 package id.ac.ukdw.intent;
 
+import android.app.NotificationManager;
+import android.icu.text.Normalizer;
 import android.os.Bundle;
 import android.os.PersistableBundle;
 import android.support.annotation.Nullable;
@@ -14,5 +16,8 @@ public class HalamanDuaActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.halaman_dua);
+
+        NotificationManager nManager = (NotificationManager)getSystemService(NOTIFICATION_SERVICE);
+        nManager.cancel(1);
     }
 }
